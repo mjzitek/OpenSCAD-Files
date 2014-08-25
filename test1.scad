@@ -1,0 +1,1 @@
+import_dxf(file = "test1.dxf");
