@@ -6,9 +6,9 @@
 
 module gripper() {
 	difference() {
-		cube([26,20,20]);
-		translate([3,3,-4]) cube([20,30,30]);
-		translate([10,8,-4]) cube([20,20,30]);
+		cube([20,20,20]);
+		translate([3,3,-4]) cube([15,30,30]);
+		translate([14,10,-4]) cube([20,20,30]);
 	}
 }
 
