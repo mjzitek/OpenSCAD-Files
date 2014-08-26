@@ -4,13 +4,14 @@
 
 */
 
-
 module gripper() {
 	difference() {
 		cube([26,20,20]);
-		translate([3,3,-4]) cube([18,30,30]);
+		translate([3,3,-4]) cube([20,30,30]);
+		translate([10,8,-4]) cube([20,20,30]);
 	}
 }
+
 
 
 
@@ -24,8 +25,20 @@ module arm() {
 		translate([-50,-80,-10]) cube([60,90,40]);
 		translate([0,-50,-10]) cube([60,190,40]);
 	}
+
+	
 }
 
-gripper();
-translate([-43,20,0]) rotate([0,0,270]) arm();
-	
+
+module phone_gripper_arm() {
+	gripper();
+	difference() {
+		translate([-37,-8,0]) rotate([0,0,300]) arm();
+		// bolt hole
+		translate([-45,30,5]) rotate([90,0,0]) cylinder(h=30,r=2, center=true);
+
+	}
+}	
+
+
+//phone_gripper_arm();
