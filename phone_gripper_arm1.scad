@@ -1,3 +1,3 @@
 include <phone_grip1.scad>;
 
-phone_gripper_arm();
+mirror([0,1,0]) phone_gripper_arm();
