@@ -25,8 +25,10 @@ module simple_phone_stand1() {
 
  	translate([10,22,-77]) rotate([90,-15,0]) gripper();
 
-	translate([4,-10,-97]) rotate([90,0,0]) arm();
+	translate([-4.5,-10,-97]) rotate([90,14,0]) arm();
 
-	translate([4,22,-97]) rotate([90,0,0]) arm();
+	translate([-4.5,22,-97]) rotate([90,14,0]) arm();
 
 }
+
+simple_phone_stand1();
