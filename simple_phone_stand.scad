@@ -31,4 +31,4 @@ module simple_phone_stand1() {
 
 }
 
-simple_phone_stand1();
+//simple_phone_stand1();
